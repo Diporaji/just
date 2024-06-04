@@ -1,0 +1,14 @@
+h4 {
+    color: red;
+    font-family: Arial, sans-serif;
+}
+h5 {
+    font-family: Arial, sans-serif;
+}
+input[type="button"]{
+    background: rgb(67, 42, 42);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
