@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+
+        <style>
+            @keyframes sula{
+                0% {
+                    margin-left: 0;
+                    margin-top: 0px;
+                    background: blue;
+
+                }
+                25% {
+                    margin-top: 0px;
+                    margin-left: 300px;
+                    background: green;
+                    border-radius: 0px 50px 0px 0px;
+                }
+                50% {
+                    margin-left: 300px;
+                    margin-top: 300px;
+                    background: yellow;
+                    border-radius: 0px 50px;
+                }
+                75% {
+                    margin-left: 0px;
+                    margin-top: 300px;
+                    background: red;
+                    border-radius: 100%;
+                }
+                100% {
+                    margin-left: 0;
+                    margin-top: 0px;
+                    background: blue;
+                }
+            }
+           
+            p {
+                background: red;
+                width: fit-content;
+                font-size: 60px;
+                padding: 10px;
+                
+                transform: skew()
+                
+                /* animation-duration: 0s;
+                animation-delay: 0s;
+                animation-timing-function: ease-out;
+                animation-name: sula;
+                animation-iteration-count: infinite;
+                animation-direction: forwards ; */
+
+                /* transition-duration: 1s;
+                transition-property: all;
+                transition-timing-function: ease-in-out ; */
+            }
+            p:hover {
+                background: green;
+                margin-left: 100px;
+                border: 10px groove gold;
+                padding: 10px;
+            }
+            .all {
+                display: flex;
+                flex-direction: column;
+            }
+            .list {
+                padding: 20px 0px;
+                border: none;
+                background: repeating-linear-gradient(90deg, red 5%, orange 10%);
+                /*background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+                background: linear-gradient(27deg, red, orange, yellow, green, blue, indigo, violet); */
+                color: yellow;
+                font-weight: 600;  
+                transition: all;
+                transition-duration: 0.8s;  
+                transition-timing-function: ease-in-out;
+            }
+            .all button:hover {
+                background: gold;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            🚓
+        </p>
+
+        <ul class="all">
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+            <button class="list">MOBILE APP DEVELOPMENT</button>
+        </ul>
+    </body>
+</html>
